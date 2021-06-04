@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+    font-family: 'Bebas Neue', cursive;
+    margin: 30px;
+}
+
+#title {
+    padding: 30px;
+    background-color: black;
+    color:white;
+    font-size: 90px;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    padding: 10px;
+    background-color: black;
+    color:white;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+.textblock {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: justify;
+    margin: 40px;
+    font-size: 35px;
+}
+
+hr {
+    border-color: black;
+}
+
+#banner p {
+    margin: 0;
+}
+
+.subtext {
+    font-size: 50px;
+}
+
+#discriminated span{
+    margin-right: 30px;
+}
+
+#discriminated {
+    font-size: 50px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#endbanner {
+    font-size: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        margin: 5px;
+    }
+
+    #title {
+      font-size: 4rem;
+    }
+    
+    .subtext {
+        font-size: 80px;
+    }
+    #discriminated span{
+        font-size: 35px;
+        margin-right: 10px;
+    }
+
+    #endbanner {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .textblock {
+        text-align: left;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+  }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Why inequality?</title>
+</head>
+<body>
+    <div id="banner">
+        <div id="title">What does it matter if you are</div>
+        <div id="discriminated"></div>
+        <hr>
+        <p class="subtext" id="endbanner">No exactly, it matters <u>nothing</u>, because...</p>
+
+        <div class="textblock">We are all human and we each have our own differences and that’s what makes us unique. The fact that we aren’t all the same makes this world an interesting place to live in. Why are we discriminating people simply because of their skin-color or the person they love? Why do we think we have the privilege to choose what’s right and not? Why do we think we have a say about the lives of others. If they’re doing no harm, let them be. Live and let live.</div>
+        
+
+    </div>
+
+    
+    <footer>
+        <hr>
+        <p>Notice: this website was made by Mohamed El Yousfi for educational purposes.</p>
+    </footer>
+    
+</body>
+<script>
+
+    const discriminated = [
+        "gay",
+        "bisexual",
+        "lesbian",
+        "a refugee",
+        "a muslim",
+        "a jew",
+        "a woman",
+        "non-binary",
+        "non-cisgender",
+        "black",
+        "yellow",
+        "asian",
+        "a disabled person",
+        "a-bit-thicker-then-others",
+        "brown",
+        "a-bit-thinner-then-others",
+    ]
+
+    shuffledArray = shuffle(discriminated);
+
+    var discriminatedString = ""
+    shuffledArray.forEach(element => {
+        discriminatedString += `<span> ${element} </span>`
+    });
+    
+    document.getElementById("discriminated").innerHTML = discriminatedString;
+
+
+function shuffle(array) {
+  var currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
+</script>
+</html>
